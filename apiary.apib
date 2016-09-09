@@ -136,7 +136,10 @@ Client Ledger Account profile.
     + Attributes 
         + Data (ClientAccount)
         + Response (200 SuccessResponse)
-    
+
++ Response 400 (application/json; charset=utf-8)
+    + Attributes (400 BadPropertyResponse)
+
 + Response 404 (application/json; charset=utf-8)
     + Attributes (404 Response)
 
@@ -556,6 +559,8 @@ Nominal (General) Ledger Account profile.
         + Pagination (Pagination)
         + Response (200 SuccessResponse)
 
++ Response 400 (application/json; charset=utf-8)
+    + Attributes (400 BadPropertyResponse)
 
 + Response 404 (application/json; charset=utf-8)
     + Attributes (404 Response)
@@ -586,6 +591,9 @@ Nominal (General) Ledger Account profile.
     + Attributes 
         + Data (NominalAccount)
         + Response (200 SuccessResponse)
+
++ Response 400 (application/json; charset=utf-8)
+    + Attributes (400 BadPropertyResponse)
 
 
 + Response 404 (application/json; charset=utf-8)
@@ -2897,14 +2905,14 @@ The Transaction key is a five part key made up of the following values seperate 
 + ReleaseId: 12345 (number)
 + ExpedOrderDetails (ExpedCallOff)
 + PumpingMemo: memp text ges here (string)
-+ ProcessComplete: 1 (boolean)
++ ProcessComplete: true (boolean)
 + TargetStockUnit (StockUnit)
 
 ## DeliveryOutOrder (object)
 + ReleaseId: 12345 (number)
 + ExpedOrderDetails (ExpedCallOff)
 + PumpingMemo: memp text ges here (string)
-+ ProcessComplete: 1 (boolean)
++ ProcessComplete: true (boolean)
 + SourceStockUnit (array [StockLoading])
 
 ## Department (object)
